@@ -1,0 +1,12 @@
+{
+  "model_load_time": 0.1054840087890625,
+  "inference_times": [
+    0.0010149478912353516,
+    0.00034499168395996094,
+    0.0003650188446044922
+  ],
+  "total_embeddings": 3,
+  "successful_embeddings": 3,
+  "avg_inference_time": 0.0005749861399332682,
+  "success_rate": 1.0
+}

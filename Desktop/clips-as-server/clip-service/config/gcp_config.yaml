@@ -1,0 +1,36 @@
+# GCP Configuration for CLIP Service
+machine_config:
+  zone: us-central1-a
+  machine_type: a2-highgpu-4g  # 4x NVIDIA A100 GPUs
+  accelerator_type: NVIDIA_TESLA_A100
+  accelerator_count: 4
+  disk_size_gb: 100
+  disk_type: pd-ssd
+
+container_config:
+  base_image: nvidia/cuda:11.8.0-cudnn8-runtime-ubuntu22.04
+  python_version: "3.9"
+  cuda_version: "11.8"
+  
+scaling_config:
+  min_instances: 1
+  max_instances: 4
+  target_cpu_utilization: 0.6
+  target_gpu_utilization: 0.8
+
+monitoring_config:
+  enable_gpu_metrics: true
+  enable_memory_logging: true
+  metrics_export_interval: 60  # seconds
+  log_level: INFO
+
+network_config:
+  network_tier: PREMIUM
+  enable_private_ip: true
+  
+redis_config:
+  machine_type: e2-standard-4
+  memory_size_gb: 26
+  version: "6.x"
+  high_availability: true
+  authorized_network: default 

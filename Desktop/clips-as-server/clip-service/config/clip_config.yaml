@@ -1,0 +1,28 @@
+# CLIP Service Configuration
+
+server:
+  host: '0.0.0.0'
+  port: 8000
+  debug: false
+  workers: 4
+  timeout: 60
+
+model:
+  name: 'SigLIP'  # Model name (SigLIP, CLIP, etc.)
+  device: 'cuda'  # Device to use for inference (cuda, cpu)
+  batch_size: 32  # Batch size for inference
+  max_batch_size: 64  # Maximum batch size
+  cache_embeddings: true  # Whether to cache embeddings
+  cache_dir: '/tmp/clip-service/cache'  # Directory to cache embeddings
+  
+  # Model-specific parameters
+  parameters:
+    pretrained: 'webli'  # Pretrained model weights
+    initial_batch_size: 2  # Initial batch size for warm-up
+    image_size: 224  # Image size for input
+    normalize: true  # Whether to normalize embeddings
+    
+logging:
+  level: 'INFO'  # Logging level
+  file: '/var/log/clip-service.log'  # Log file path
+  format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'  # Log format 

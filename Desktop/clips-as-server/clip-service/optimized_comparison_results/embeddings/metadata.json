@@ -1,0 +1,38 @@
+{
+  "captions": [
+    "A man is looking intently at something in his hands while another man, who is slightly behind him, is smoking and holding a can of something in his hand.",
+    "Two little girls, playing together in the sand.",
+    "The cheerleading squad for a professional basketball team is performing a routine.",
+    "A man in khakis pants is lying on concrete and looking into the sky.",
+    "One woman gives another woman a pedicure in a small apartment, as yet another woman watches.",
+    "It looks like quite a sweaty, smelly dog pile over one little rugby ball, but the boys in blue seem to want it more.",
+    "A young curly brown headed boy is jumping into the arms of a woman in a pool.",
+    "A dog and a ball on green grass and in front of trees.",
+    "2 men play basketball, Paul (number 13) on the white team has possession of the ball with his back to us, as number 4 on the blue team plays defense against him.",
+    "Woman in jeans in mid leap on the sand at low tide at sundown."
+  ],
+  "image_paths": [
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+  ],
+  "models": {
+    "base": {
+      "name": "ViT-B-16-SigLIP",
+      "pretrained": "webli",
+      "embedding_dim": 768
+    },
+    "large": {
+      "name": "ViT-L-16-SigLIP-384",
+      "pretrained": "webli",
+      "embedding_dim": 1024
+    }
+  }
+}

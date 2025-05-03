@@ -1,0 +1,99 @@
+# Main configuration file for CLIP service
+
+# Service configuration
+service:
+  name: "clip-service"
+  version: "0.1.0"
+  host: "0.0.0.0"
+  port: 8000
+  workers: 4
+  log_level: "INFO"
+  
+# API configuration
+api:
+  prefix: "/v1"
+  enable_docs: true
+  cors_origins: ["*"]
+  rate_limit: 100  # requests per minute
+  auth:
+    enabled: true
+    api_key_header: "X-API-Key"
+    # In production, use environment variables or secrets management
+    api_keys: ["test_key"]  
+  
+# Model configuration
+model:
+  name: "ViT-L/14@336px"  # Default model
+  device: "cuda"
+  precision: "fp16"  # Options: fp32, fp16, int8
+  compile: true
+  compile_mode: "max-autotune"  # Options: default, reduce-overhead, max-autotune
+  
+# Optimization configuration
+optimization:
+  enable_quantization: true
+  quantization_type: "dynamic"  # Options: static, dynamic
+  kv_cache: true  # Enable paged KV cache
+  cuda_graphs: true  # Enable CUDA graphs
+  
+# Inference configuration
+inference:
+  batch_size: 32
+  max_batch_size: 64
+  min_batch_size: 1
+  max_wait_ms: 10  # Maximum wait time for batch
+  prediction_window_ms: 100  # Load prediction window
+  
+# Vector storage configuration
+vector_storage:
+  engine: "faiss"  # Options: faiss, scann
+  index_path: "/data/clip_indexes"
+  dimensions: 768  # Embedding dimensions
+  metric: "cosine"  # Options: cosine, l2, dot
+  index_type: "HNSW"  # Options: Flat, IVF, HNSW
+  
+  # FAISS specific options
+  faiss:
+    nlist: 1000
+    nprobe: 20
+    gpu: true
+    
+  # ScaNN specific options
+  scann:
+    num_leaves: 1000
+    num_reordering_candidates: 100
+    
+# Monitoring configuration
+monitoring:
+  metrics:
+    enabled: true
+    port: 8001
+    path: "/metrics"
+  tracing:
+    enabled: true
+    exporter: "jaeger"
+    sampling_rate: 0.1
+  profiling:
+    enabled: true
+    export_chrome_trace: true
+    profile_memory: true
+    record_shapes: true
+    
+# Cache configuration
+cache:
+  type: "redis"  # Options: memory, redis
+  ttl_seconds: 3600
+  max_size_mb: 1024
+  redis:
+    host: "redis"
+    port: 6379
+    
+# Advanced features
+extensions:
+  speculative_decoding:
+    enabled: false
+    num_refinements: 3
+  llm_integration:
+    enabled: false
+    endpoint: "http://llm-service:8000/v1/completions"
+    model: "gpt-4"

@@ -1,0 +1,294 @@
+================================================================================
+LLaVA REASONING RESULTS
+================================================================================
+
+ENTRY 1/10
+--------------------------------------------------------------------------------
+ID: sample_0
+Caption: A man is looking intently at something in his hands while another man, who is slightly behind him, is smoking and holding a can of something in his hand.
+Image path: demo_images/red_square.png
+
+CAPTION:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+SCENE:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+TABLE:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+QA:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+EXPLANATION:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+
+================================================================================
+
+ENTRY 2/10
+--------------------------------------------------------------------------------
+ID: sample_1
+Caption: Two little girls, playing together in the sand.
+Image path: demo_images/blue_square.png
+
+CAPTION:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+SCENE:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+TABLE:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+QA:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+EXPLANATION:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+
+================================================================================
+
+ENTRY 3/10
+--------------------------------------------------------------------------------
+ID: sample_2
+Caption: The cheerleading squad for a professional basketball team is performing a routine.
+Image path: demo_images/green_square.png
+
+CAPTION:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+SCENE:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+TABLE:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+QA:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+EXPLANATION:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+
+================================================================================
+
+ENTRY 4/10
+--------------------------------------------------------------------------------
+ID: sample_3
+Caption: A man in khakis pants is lying on concrete and looking into the sky.
+Image path: demo_images/yellow_square.png
+
+CAPTION:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+SCENE:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+TABLE:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+QA:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+EXPLANATION:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+
+================================================================================
+
+ENTRY 5/10
+--------------------------------------------------------------------------------
+ID: sample_4
+Caption: One woman gives another woman a pedicure in a small apartment, as yet another woman watches.
+Image path: demo_images/purple_square.png
+
+CAPTION:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+SCENE:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+TABLE:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+QA:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+EXPLANATION:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+
+================================================================================
+
+ENTRY 6/10
+--------------------------------------------------------------------------------
+ID: sample_5
+Caption: It looks like quite a sweaty, smelly dog pile over one little rugby ball, but the boys in blue seem to want it more.
+Image path: demo_images/red_square.png
+
+CAPTION:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+SCENE:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+TABLE:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+QA:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+EXPLANATION:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+
+================================================================================
+
+ENTRY 7/10
+--------------------------------------------------------------------------------
+ID: sample_6
+Caption: A young curly brown headed boy is jumping into the arms of a woman in a pool.
+Image path: demo_images/blue_square.png
+
+CAPTION:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+SCENE:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+TABLE:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+QA:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+EXPLANATION:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+
+================================================================================
+
+ENTRY 8/10
+--------------------------------------------------------------------------------
+ID: sample_7
+Caption: A dog and a ball on green grass and in front of trees.
+Image path: demo_images/green_square.png
+
+CAPTION:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+SCENE:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+TABLE:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+QA:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+EXPLANATION:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+
+================================================================================
+
+ENTRY 9/10
+--------------------------------------------------------------------------------
+ID: sample_8
+Caption: 2 men play basketball, Paul (number 13) on the white team has possession of the ball with his back to us, as number 4 on the blue team plays defense against him.
+Image path: demo_images/yellow_square.png
+
+CAPTION:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+SCENE:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+TABLE:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+QA:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+EXPLANATION:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+
+================================================================================
+
+ENTRY 10/10
+--------------------------------------------------------------------------------
+ID: sample_9
+Caption: Woman in jeans in mid leap on the sand at low tide at sundown.
+Image path: demo_images/purple_square.png
+
+CAPTION:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+SCENE:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+TABLE:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+QA:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+EXPLANATION:
+--------------------------------------------------------------------------------
+Error: Image features and image tokens do not match: tokens: 0, features 576
+
+
+================================================================================
+

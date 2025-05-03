@@ -1,0 +1,113 @@
+Detailed SigLIP Similarity Scores
+===============================
+
+Example 1
+Original Caption: A man is looking intently at something in his hands while another man, who is slightly behind him, is smoking and holding a can of something in his hand.
+Top 5 similarity scores:
+  1. Score: 0.1203 (MATCH) - A man is looking intently at something in his hands while another man, who is slightly behind him, is smoking and holding a can of something in his hand.
+  2. Score: 0.0470  - A male is walking in an area that has 2 painted white lines.
+  3. Score: 0.0461  - A man looks at a soldier who stands on a platform, as a fan blows on him.
+  4. Score: 0.0364  - Two woman talk in the middle of a parking lot, near two cars, as random people wander nearby.
+  5. Score: 0.0347  - Children on a city street are playing tug-of-war wile others look on.
+
+--------------------------------------------------
+
+Example 2
+Original Caption: Two little girls, playing together in the sand.
+Top 5 similarity scores:
+  1. Score: 0.1338 (MATCH) - Two little girls, playing together in the sand.
+  2. Score: 0.0453  - Two young boys, one squatting, the other looking at a nearby body of water, are on a graveled piece of land.
+  3. Score: 0.0443  - Two girls are sitting outside on the ground in front of a lake.
+  4. Score: 0.0275  - Four children in bathing suits play on a beach lined with rock and foliage, while other people are visible in the background.
+  5. Score: 0.0084  - A woman has been knocked down by strong waves in the ocean
+
+--------------------------------------------------
+
+Example 3
+Original Caption: The cheerleading squad for a professional basketball team is performing a routine.
+Top 5 similarity scores:
+  1. Score: 0.1177 (MATCH) - The cheerleading squad for a professional basketball team is performing a routine.
+  2. Score: 0.0566  - A group of cheerleaders wearing blue outfits with white tutus are jumping up together in unison with their arms up in the air.
+  3. Score: 0.0384  - Two cheerleaders in dark blue pants and bra style top with yellow pompoms mid cheer.
+  4. Score: 0.0012  - A soccer game between the red team and the blue team.
+  5. Score: -0.0057  - A band is standing in front of a group of people playing there guitars and singing.
+
+--------------------------------------------------
+
+Example 4
+Original Caption: A man in khakis pants is lying on concrete and looking into the sky.
+Top 5 similarity scores:
+  1. Score: 0.0486  - A man kneeling on the street in front of a graffiti laden car and some poster boards with artwork on them.
+  2. Score: 0.0466 (MATCH) - A man in khakis pants is lying on concrete and looking into the sky.
+  3. Score: 0.0361  - A young male wearing a red shirt and black pants is performing a dance technique in a terminal station for travelers.
+  4. Score: 0.0342  - A little boy in a blue jacket walking on a bench as his mother in a green jacket and a black bag holds his hand.
+  5. Score: 0.0336  - Two girls are sitting outside on the ground in front of a lake.
+
+--------------------------------------------------
+
+Example 5
+Original Caption: One woman gives another woman a pedicure in a small apartment, as yet another woman watches.
+Top 5 similarity scores:
+  1. Score: 0.0823  - The brown headed boy on his scooter is going to the toy store after school.
+  2. Score: 0.0695 (MATCH) - One woman gives another woman a pedicure in a small apartment, as yet another woman watches.
+  3. Score: 0.0494  - Man in black shirt passing child to woman in olive tank while seated at a table.
+  4. Score: 0.0244  - A man with glasses and a mustache scrapes paint off the outside of a windowsill.
+  5. Score: 0.0241  - An older woman with a little girl toddler looking at a white and red dollhouse and playing with it.
+
+--------------------------------------------------
+
+Example 6
+Original Caption: It looks like quite a sweaty, smelly dog pile over one little rugby ball, but the boys in blue seem to want it more.
+Top 5 similarity scores:
+  1. Score: 0.1158 (MATCH) - It looks like quite a sweaty, smelly dog pile over one little rugby ball, but the boys in blue seem to want it more.
+  2. Score: 0.0441  - A small group of soccer players are on a soccer field standing around while a player is looked at for injuries.
+  3. Score: 0.0371  - A soccer game between the red team and the blue team.
+  4. Score: 0.0298  - A football player wearing blue and gold holding a football at a football game.
+  5. Score: 0.0145  - One man in the hole of a tire in water, and another man getting up from the water next to him.
+
+--------------------------------------------------
+
+Example 7
+Original Caption: A young curly brown headed boy is jumping into the arms of a woman in a pool.
+Top 5 similarity scores:
+  1. Score: 0.1293 (MATCH) - A young curly brown headed boy is jumping into the arms of a woman in a pool.
+  2. Score: 0.0111  - One man in the hole of a tire in water, and another man getting up from the water next to him.
+  3. Score: 0.0032  - A young boy looks up towards the camera, while standing next to a calm stream.
+  4. Score: -0.0010  - The redheaded girl giggles happily as she swings her pillow at her opponent during a recent pillow fight.
+  5. Score: -0.0121  - It looks like quite a sweaty, smelly dog pile over one little rugby ball, but the boys in blue seem to want it more.
+
+--------------------------------------------------
+
+Example 8
+Original Caption: A dog and a ball on green grass and in front of trees.
+Top 5 similarity scores:
+  1. Score: 0.1078 (MATCH) - A dog and a ball on green grass and in front of trees.
+  2. Score: 0.0683  - It looks like quite a sweaty, smelly dog pile over one little rugby ball, but the boys in blue seem to want it more.
+  3. Score: 0.0493  - A brown dog with a lease is running with a person behind the dog.
+  4. Score: 0.0451  - The man is in the field with four dogs who are running.
+  5. Score: 0.0423  - A soccer game between the red team and the blue team.
+
+--------------------------------------------------
+
+Example 9
+Original Caption: 2 men play basketball, Paul (number 13) on the white team has possession of the ball with his back to us, as number 4 on the blue team plays defense against him.
+Top 5 similarity scores:
+  1. Score: 0.1110 (MATCH) - 2 men play basketball, Paul (number 13) on the white team has possession of the ball with his back to us, as number 4 on the blue team plays defense against him.
+  2. Score: 0.0334  - The cheerleading squad for a professional basketball team is performing a routine.
+  3. Score: 0.0118  - A male is walking in an area that has 2 painted white lines.
+  4. Score: 0.0084  - A soccer game between the red team and the blue team.
+  5. Score: 0.0025  - It looks like quite a sweaty, smelly dog pile over one little rugby ball, but the boys in blue seem to want it more.
+
+--------------------------------------------------
+
+Example 10
+Original Caption: Woman in jeans in mid leap on the sand at low tide at sundown.
+Top 5 similarity scores:
+  1. Score: 0.1422 (MATCH) - Woman in jeans in mid leap on the sand at low tide at sundown.
+  2. Score: 0.0319  - A woman has been knocked down by strong waves in the ocean
+  3. Score: 0.0245  - A boy with glasses on standing in the sand throws a yellow balloon in the air.
+  4. Score: 0.0026  - A male is walking in an area that has 2 painted white lines.
+  5. Score: 0.0001  - A man wit a fishing rod fishing on the beach.
+
+--------------------------------------------------
+

@@ -1,0 +1,9 @@
+Metric,Value,Direction
+recall@1,0.949999988079071,Image→Text
+recall@5,1.0,Image→Text
+recall@10,1.0,Image→Text
+recall@1,0.9599999785423279,Text→Image
+recall@5,1.0,Text→Image
+recall@10,1.0,Text→Image
+mrr,0.9733333587646484,Image→Text
+mrr,0.9775000214576721,Text→Image

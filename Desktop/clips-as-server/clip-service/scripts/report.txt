@@ -1,0 +1,115 @@
+# Multi-Modal Retrieval and Reasoning Pipeline: Technical Report
+
+## Overview
+This project implements a cutting-edge, modular pipeline for multi-modal document/image retrieval and reasoning. It leverages state-of-the-art vision-language models (CLIP, SigLIP, LLaVA), a vector database (Qdrant), and agent orchestration for scalable, hybrid, and explainable search and QA over large collections of images and documents.
+
+---
+
+## Architecture
+- **Data Ingestion:** Images and associated metadata are ingested from a configurable directory structure.
+- **Embedding Generation:** Multiple models (CLIP, SigLIP-B, SigLIP-L/ViT-L-16) generate dense vector representations for each image.
+- **Visual Reasoning:** LLaVA (Large Language and Vision Assistant) generates captions, scene descriptions, table/figure summaries, visual Q&A, and explanations for each image.
+- **Metadata Enrichment:** All embeddings and LLaVA outputs are stored in a unified metadata structure (Python pickle file).
+- **Vector Database (Qdrant):** Multi-vector fields (CLIP, SigLIP-B, SigLIP-L) and rich metadata are upserted into Qdrant for fast, hybrid, and multi-modal retrieval.
+- **Hybrid Retrieval:** Supports vector similarity, keyword, and metadata filtering in a single query.
+- **Agent Orchestration:** Python module exposes all pipeline steps as callable commands for agent-driven automation and workflow chaining.
+- **Visualization:** UMAP + Plotly interactive visualization for embedding analysis and model comparison.
+- **Testing:** Pytest-based unit tests ensure correctness and reproducibility of embedding generation and data flow.
+
+---
+
+## Models Used
+- **CLIP:** OpenAI's Contrastive Language-Image Pretraining model for robust image-text embeddings.
+- **SigLIP-B and SigLIP-L (ViT-L-16):** Google's Sigmoid Loss Image-Text Pretraining models, with ViT-L-16 as the large variant for high-quality embeddings.
+- **LLaVA:** Vision-language model for generating rich, explainable visual reasoning outputs (captions, scene, Q&A, etc.).
+
+---
+
+## Data Flow
+1. **Image Collection:** Images are placed in a configurable directory (default: `../input/images`).
+2. **Embedding Generation:**
+    - `generate_embeddings.py` loads each image and computes embeddings using CLIP, SigLIP-B, and SigLIP-L.
+    - All embeddings and metadata are saved in a single pickle file (`all_image_metadata.pkl`).
+3. **LLaVA Reasoning:**
+    - `run_llava_batch.py` loads the metadata, runs LLaVA on each image with multiple prompts, and enriches the metadata with LLaVA outputs.
+4. **Qdrant Upsert:**
+    - `upsert_vitl16_to_qdrant.py` (or `upsert_to_qdrant.py`) loads the enriched metadata and upserts all embeddings and metadata into Qdrant as multi-vector fields.
+5. **Hybrid Retrieval:**
+    - Qdrant supports searching by any embedding (CLIP, SigLIP-B, SigLIP-L) and filtering by metadata (e.g., doc_id, OCR, LLaVA caption).
+6. **Agent Orchestration:**
+    - `agent_commands.py` exposes all major steps as Python functions, enabling agent-driven or programmatic pipeline execution.
+7. **Visualization:**
+    - `visualize_embeddings.py` uses UMAP and Plotly to project and compare embeddings interactively.
+
+---
+
+## Best Practices & Cutting-Edge Features
+- **Multi-Vector Storage:** Qdrant stores all model embeddings in a single collection, enabling flexible, model-aware retrieval.
+- **Rich Metadata:** All LLaVA outputs, OCR, and document info are stored for downstream reasoning and explainability.
+- **Hybrid Search:** Combines vector similarity with keyword and metadata filtering for state-of-the-art retrieval.
+- **Agent-Ready:** All pipeline steps are callable, enabling integration with LLM agents, LangChain, or custom orchestrators.
+- **Testability:** All scripts are modular, with main logic in functions for easy unit testing and CI/CD integration.
+- **Visualization:** UMAP+Plotly enables deep analysis of embedding space, cluster structure, and model comparison.
+- **Extensibility:** New models, prompts, or retrieval strategies can be added with minimal code changes.
+
+---
+
+## File/Script Structure
+- `generate_embeddings.py`: Batch embedding generation for CLIP, SigLIP-B, SigLIP-L.
+- `run_llava_batch.py`: Batch LLaVA reasoning and metadata enrichment.
+- `upsert_vitl16_to_qdrant.py` / `upsert_to_qdrant.py`: Upsert all data to Qdrant with multi-vector support.
+- `visualize_embeddings.py`: UMAP+Plotly interactive embedding visualization.
+- `agent_commands.py`: Exposes all steps as callable functions for agent orchestration.
+- `test_generate_embeddings.py`: Unit tests for embedding generation and metadata structure.
+- `run_visualization.sh`: Shell script to activate the environment and launch visualization.
+
+---
+
+## Example Pipeline Usage
+1. **Generate embeddings:**
+   ```sh
+   python generate_embeddings.py
+   ```
+2. **Run LLaVA reasoning:**
+   ```sh
+   python run_llava_batch.py
+   ```
+3. **Upsert to Qdrant:**
+   ```sh
+   python upsert_vitl16_to_qdrant.py
+   ```
+4. **Visualize embeddings:**
+   ```sh
+   bash run_visualization.sh
+   # or
+   python visualize_embeddings.py [optional_path_to_metadata]
+   ```
+5. **Agent orchestration:**
+   ```python
+   from agent_commands import run_generate_embeddings, run_llava_batch, run_upsert_to_qdrant, run_visualization
+   run_generate_embeddings()
+   run_llava_batch()
+   run_upsert_to_qdrant()
+   run_visualization()
+   ```
+
+---
+
+## Testing & Validation
+- Unit tests ensure that embedding generation produces the correct structure and that all metadata fields are present.
+- Scripts are refactored for testability (no code runs at import time).
+- All file paths are configurable and robust to missing files.
+
+---
+
+## Future Directions
+- Integrate more advanced VLMs (e.g., LLaVA-Next, BLIP-3, Qwen-VL, Gemini).
+- Add support for text chunking, OCR, and document-level retrieval.
+- Integrate with LangChain or LlamaIndex for advanced agent workflows.
+- Add distributed and cloud-native Qdrant support for large-scale deployments.
+- Enhance visualization with cluster analysis, outlier detection, and multi-modal overlays.
+
+---
+
+## Conclusion
+This pipeline is designed for maximum flexibility, extensibility, and performance, following best practices for multi-modal AI systems in 2025. It is suitable for research, production, and rapid prototyping of retrieval-augmented multi-modal agents and applications. 

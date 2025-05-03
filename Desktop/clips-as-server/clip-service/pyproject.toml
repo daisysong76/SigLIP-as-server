@@ -1,0 +1,80 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clip-service"
+version = "0.1.0"
+description = "Scalable CLIP Inference Service"
+readme = "README.md"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+]
+dependencies = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "transformers>=4.30.0",
+    "fastapi>=0.100.0",
+    "pydantic>=2.0.0",
+    "uvicorn>=0.22.0",
+    "pillow>=9.5.0",
+    "faiss-gpu>=1.7.4",
+    "scann>=1.2.9",
+    "triton>=2.0.0",
+    "onnx>=1.14.0",
+    "onnxruntime-gpu>=1.15.0",
+    "pytorch-lightning>=2.0.0",
+    "tensorrt>=8.6.0",
+    "prometheus-client>=0.17.0",
+    "opentelemetry-api>=1.18.0",
+    "opentelemetry-sdk>=1.18.0",
+    "pyyaml>=6.0.0",
+    "python-multipart>=0.0.6",
+    "httpx>=0.24.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.3.1",
+    "pytest-cov>=4.1.0",
+    "black>=23.3.0",
+    "isort>=5.12.0",
+    "mypy>=1.3.0",
+    "pylint>=2.17.0",
+    "pre-commit>=3.3.2",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yourusername/clip-service"
+"Bug Tracker" = "https://github.com/yourusername/clip-service/issues"
+
+[tool.setuptools]
+packages = ["clip_service"]
+
+[tool.black]
+line-length = 88
+target-version = ["py39"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
